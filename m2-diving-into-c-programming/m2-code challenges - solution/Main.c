@@ -1,0 +1,20 @@
+include<iostream>
+using namespace std;
+  
+// Function to calculate the following series
+int Series(int n)
+{
+    int i;
+    int sums = 0;
+    for (i = 1; i <= n; i++)
+        sums += (i * i);
+    return sums;
+}
+  
+// Driver Code
+int main()
+{
+    int n = 3;
+    int res = Series(n);
+    cout<<res<<endl;
+}
